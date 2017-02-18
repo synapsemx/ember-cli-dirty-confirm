@@ -21,7 +21,7 @@ export default Ember.Mixin.create({
 
   dirtyRelationships: [],
 
-  dirtyMessage: 'Leaving this page will lose your changes. Are you sure?',
+  dirtyMessage: 'Leaving without saving will cancel your changes. Are you sure?',
 
   checkDirtyConfirm(transition) {
     if (!this.get('isDirtyConfirmEnabled')) {
